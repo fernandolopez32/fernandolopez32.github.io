@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styles.css">
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book your stay</a></li>
+                <li><a href="persona.html">Testimonies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <!-- create a form for people to book their stay at the island -->
+    <section>
+        <h2>Book Your Stay</h2>
+        <form id="booking" action="/submit-booking" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+            
+            <label for="room">Room Type:</label>
+            <select id="room" name="room" required>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+            
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+          
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lopez Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
